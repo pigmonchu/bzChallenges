@@ -65,3 +65,9 @@ Se obtiene con el día de nacimiento
 La fecha ha de ser existente, es decir anterior a hoy y tener buen formato.
 
 También has de considerar la posibilidad de que el nombre o apellido empiecen por Ñ.
+
+# Una solución
+
+La solución está en el fichero `main.py`. Fijaos en como he utilizado un módulo para las funciones y así main es muy legible. Por ahora olvidad el fichero `tests_superheroes.py`.
+
+Dudas por slack
