@@ -5,6 +5,7 @@ Se trata de que el programa pida nombre | apellido y fecha de nacimiento y te as
 ## Nombre de superheroe
 
 Según la inicial del nombre y la siguiente lista:
+
 | | | | |
 |---|---|---|---|
 |  A :  Sobaco  |  B :  Asesino  |  C :  Capitan  |  D :  Pezon  | 
@@ -31,6 +32,7 @@ Según la inicial del apellido y la siguiente lista:
 ## Color del traje
 
 Se obtiene con el último dígito del año de nacimiento
+
 | | | | | |
 |---|---|---|---|---|
 |0:  Escarlata  | 1:  Dorado  | 2:  Amarillo  | 3:  Oscuro  | 4:  Verde  |
@@ -49,6 +51,7 @@ Se obtiene según el número del mes
 ## Arma
 
 Se obtiene con el día de nacimiento
+
 | | | | | |
 |---|---|---|---|---|
 | 1: Bastón  | 2: Espada  | 3: Hacha  | 4: Sombrilla  | 5: Escudo  |
