@@ -35,7 +35,8 @@ def InputUntil(ask, validation=None, error_msg = 'Se ha producido un error', tra
 def esFecha(cadena):
     try:
         datetimeObject = datetime.datetime.strptime(cadena, _FORMATO_FECHA)
-        return True
+        now = datetime.datetime.now()
+        return now >= datetimeObject
     except ValueError:
         return False
 

@@ -9,6 +9,10 @@ class TestsHeroes(unittest.TestCase):
         self.assertFalse(esFecha('31-4-1970'))
         self.assertFalse(esFecha(''))
 
+    def test_is_yesterday(self):
+        self.assertTrue(esFecha('8-4-1970'))
+        self.assertFalse(esFecha('8-4-2970'))
+
     def test_asigna_nombre(self):
         self.assertEqual(asignaNombre('Ana'), nombreSuperHeroes['A'])
         self.assertEqual(asignaNombre('ana'), nombreSuperHeroes['A'])
