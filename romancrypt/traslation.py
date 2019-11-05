@@ -4,9 +4,22 @@ numeros = '0123456789'
 translateVocales = ''.maketrans('ÁÉÍÓÚÜáéíóúü', 'AEIOUUaeiouu')
 
 def move(font, char, dist):
-    return font[(font.index(char)+dist) % len(font)]
+    try:
+        i = font.index(char)
+        return font[(font.index(char)+dist) % len(font)]
+    except ValueError:
+        return char
 
-def cifra(cadena, distancia):
+def moveAllList(char, dist, *fonts):
+    for font in fonts:
+        try:
+            i = font.index(char)
+            return font[(font.index(char)+dist) % len(font)]
+        except ValueError:
+            pass
+    return char
+
+def cifra1(cadena, distancia):
     result = ''
     cadena = cadena.translate(translateVocales)
     for char in cadena:
@@ -19,4 +32,22 @@ def cifra(cadena, distancia):
         else:
             result += char
     
+    return result
+
+def cifra2(cadena, distancia):
+    result = ''
+    cadena = cadena.translate(translateVocales)
+    for char in cadena:
+        char = move(letras, char, distancia)
+        char = move(letrasM, char, distancia)
+        char = move(numeros, char, distancia)
+        result += char
+    return result
+
+def cifra(cadena, distancia):
+    result = ''
+    cadena = cadena.translate(translateVocales)
+    for char in cadena:
+        char = moveAllList(char, distancia, letras, letrasM, numeros)
+        result += char
     return result

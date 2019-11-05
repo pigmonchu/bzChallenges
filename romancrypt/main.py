@@ -1,4 +1,4 @@
-from traslation import *
+import traslation
 
 def esEntero(x):
     try:
@@ -22,9 +22,9 @@ texto = InputUntil("Texto a traducir: ", lambda x: len(x) > 0)
 
 despl = InputUntil("Valor de desplazamiento: ", esEntero, 'Ha de ser un entero', lambda x: int(x) )
 
-cifrado = cifra(texto, despl)
+cifrado = traslation.cifra(texto, despl)
 
 print('Texto original: {}'.format(texto))
 print('Desplazamiento: {}'.format(despl))
 print('Cifrado.......: {}'.format(cifrado))
-print('Descifrado....: {}'.format(cifra(cifrado, -despl)))
+print('Descifrado....: {}'.format(traslation.cifra(cifrado, -despl)))
