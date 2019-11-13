@@ -1,3 +1,8 @@
 superheroes/__pycache__/
 .vscode
 romancrypt/__pycache__/
+romanNumbers/__pycache__/
+*/*.pyc
+romanNumbers/romanNC_tests.py
+romanNumbers/romanNC.py
+
