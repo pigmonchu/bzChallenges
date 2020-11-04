@@ -95,4 +95,9 @@ superPoder = superPoderes[poder]
 arma = int(fecha[0][0])
 superArma = armas[arma]
 
+'''
+Imprime frase
+'''
+
+
 print(f"Soy {superH} {superA} {superColor}, mi poder es {superPoder} y voy a luchar contra la injusticia con mi {superArma}!!")
