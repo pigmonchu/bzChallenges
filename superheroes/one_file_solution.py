@@ -55,8 +55,8 @@ while not validarPermitidos(nombre):
 
 apellido = input('Introduce tu primer apellido, por favor: ')
 while not validarPermitidos(apellido):
-    print("Tu nombre contiene caracteres no permitidos, introducelo de nuevo, por favor: ")
-    nombre = input('Introduce tu nombre, por favor: ')
+    print("Tu apellido contiene caracteres no permitidos, introducelo de nuevo, por favor: ")
+    apellido = input('Introduce tu primer apellido, por favor: ')
 
 fechaNac = input('Introduce tu fecha de nacimiento (DD-MM-YYYY): ')
 while not esFechaYEsMenorQueHoy(fechaNac):
